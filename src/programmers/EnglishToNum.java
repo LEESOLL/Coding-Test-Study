@@ -54,7 +54,7 @@ public class EnglishToNum {
                     break;
             }
         }
-        answer = Integer.parseInt(tmp);
+        answer = Long.parseLong(tmp);
 
         return answer;
     }
