@@ -1,2 +1,2 @@
-package programmers;public class SortString {
+package PACKAGE_NAME;public class SortString {
 }
