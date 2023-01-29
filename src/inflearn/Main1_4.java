@@ -10,10 +10,6 @@ public class Main1_4 { // 인프런 1-4 단어 뒤집기
 //    for(int i = 0; i < n; i++) {
 //      answer[i] = new StringBuilder(str[i]).reverse().toString();
 //    }
-
-    //String 을 뒤집는다고 생각했을 때...
-    //String.charAt(i)랑 String.charAt(String.length() - i - 1) 이랑 바꾸면 되는데..
-    //왜안되는거야..? ㅋㄷㄷㅋㄷㄷ
     for (int i = 0; i < n; i++) {
       char[] strToCharArr = str[i].toCharArray();
       for (int j = 0; j < strToCharArr.length / 2; j++) {
