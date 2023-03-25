@@ -5,9 +5,8 @@ import java.util.Scanner;
 public class Main2_7 { //인프런 2-7. 점수계산
 
     static int solution(int[] arr) {
-        int answer = arr[0];
-        int cnt = arr[0];
-        for(int i = 1; i < arr.length; i++) {
+        int answer = 0, cnt = 0;
+        for(int i = 0; i < arr.length; i++) {
             if(arr[i] == 1) {
                 cnt++;
                 answer += cnt;
