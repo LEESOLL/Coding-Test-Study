@@ -6,22 +6,19 @@ public class Main3_4 { // 인프런 3-4. 연속 부분수열
 
     static int solution(int n, int m, int[] arr) {
         int answer = 0;
-        int lt = 0;
+        int lt = 0, rt;
         int tmp_sum = 0;
 
-        for (int i = 0; i < n; i++) {
-            tmp_sum += arr[i];
-            if (tmp_sum > m) {
+        for (rt = 0; rt < n; rt++) {
+            tmp_sum += arr[rt];
+            if (tmp_sum == m) answer++;
+            while(tmp_sum >= m) {
                 tmp_sum -= arr[lt++];
-            } else if (tmp_sum < m) {
-                tmp_sum += arr[i];
-            }
-
-            if (tmp_sum == m) {
-                answer++;
+                if(tmp_sum == m) {
+                    answer++;
+                }
             }
         }
-
 
         return answer;
     }
